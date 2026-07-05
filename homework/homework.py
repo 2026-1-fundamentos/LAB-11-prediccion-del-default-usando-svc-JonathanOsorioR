@@ -158,7 +158,7 @@ pipeline = Pipeline([
 param_grid = {
     'feature_selection__k': [10, 15, 20],
     'svm__C': [0.1, 1.0, 10.0],
-    'svm__kernel': ['linear'],
+    'svm__kernel': ['rbf'],
 }
 
 grid_search = GridSearchCV(
