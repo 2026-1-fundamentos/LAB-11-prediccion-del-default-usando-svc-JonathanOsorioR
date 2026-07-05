@@ -1,0 +1,89 @@
+[CV 7/10] END feature_selection__k=10, svm__C=0.1, svm__kernel=linear;, score=0.584 total time=  24.5s
+[CV 1/10] END feature_selection__k=10, svm__C=0.1, svm__kernel=linear;, score=0.516 total time=  25.8s
+[CV 4/10] END feature_selection__k=10, svm__C=0.1, svm__kernel=linear;, score=0.543 total time=  26.5s
+[CV 3/10] END feature_selection__k=10, svm__C=0.1, svm__kernel=linear;, score=0.587 total time=  26.9s
+[CV 6/10] END feature_selection__k=10, svm__C=0.1, svm__kernel=linear;, score=0.601 total time=  28.6s
+[CV 2/10] END feature_selection__k=10, svm__C=0.1, svm__kernel=linear;, score=0.522 total time=  29.6s
+[CV 5/10] END feature_selection__k=10, svm__C=0.1, svm__kernel=linear;, score=0.513 total time=  31.2s
+[CV 8/10] END feature_selection__k=10, svm__C=0.1, svm__kernel=linear;, score=0.581 total time=  32.1s
+[CV 9/10] END feature_selection__k=10, svm__C=0.1, svm__kernel=linear;, score=0.522 total time=  27.3s
+[CV 10/10] END feature_selection__k=10, svm__C=0.1, svm__kernel=linear;, score=0.525 total time=  26.8s
+[CV 2/10] END feature_selection__k=10, svm__C=1.0, svm__kernel=linear;, score=0.523 total time=  51.6s
+[CV 1/10] END feature_selection__k=10, svm__C=1.0, svm__kernel=linear;, score=0.525 total time=  52.7s
+[CV 4/10] END feature_selection__k=10, svm__C=1.0, svm__kernel=linear;, score=0.551 total time=  54.0s
+[CV 3/10] END feature_selection__k=10, svm__C=1.0, svm__kernel=linear;, score=0.587 total time= 1.0min
+[CV 6/10] END feature_selection__k=10, svm__C=1.0, svm__kernel=linear;, score=0.601 total time= 1.1min
+[CV 5/10] END feature_selection__k=10, svm__C=1.0, svm__kernel=linear;, score=0.513 total time= 1.1min
+[CV 7/10] END feature_selection__k=10, svm__C=1.0, svm__kernel=linear;, score=0.587 total time=  56.1s
+[CV 8/10] END feature_selection__k=10, svm__C=1.0, svm__kernel=linear;, score=0.582 total time=  56.1s
+[CV 10/10] END feature_selection__k=10, svm__C=1.0, svm__kernel=linear;, score=0.542 total time=  53.5s
+[CV 9/10] END feature_selection__k=10, svm__C=1.0, svm__kernel=linear;, score=0.522 total time=  56.8s
+[CV 8/10] END feature_selection__k=10, svm__C=10.0, svm__kernel=linear;, score=0.582 total time= 4.9min
+[CV 3/10] END feature_selection__k=10, svm__C=10.0, svm__kernel=linear;, score=0.587 total time= 5.6min
+[CV 4/10] END feature_selection__k=10, svm__C=10.0, svm__kernel=linear;, score=0.551 total time= 5.6min
+[CV 7/10] END feature_selection__k=10, svm__C=10.0, svm__kernel=linear;, score=0.587 total time= 5.4min
+[CV 1/10] END feature_selection__k=15, svm__C=0.1, svm__kernel=linear;, score=0.601 total time=  33.3s
+[CV 2/10] END feature_selection__k=15, svm__C=0.1, svm__kernel=linear;, score=0.592 total time=  31.9s
+[CV 3/10] END feature_selection__k=15, svm__C=0.1, svm__kernel=linear;, score=0.591 total time=  29.7s
+[CV 1/10] END feature_selection__k=10, svm__C=10.0, svm__kernel=linear;, score=0.525 total time= 7.0min
+[CV 4/10] END feature_selection__k=15, svm__C=0.1, svm__kernel=linear;, score=0.601 total time=  28.6s
+[CV 5/10] END feature_selection__k=15, svm__C=0.1, svm__kernel=linear;, score=0.560 total time=  29.7s
+[CV 6/10] END feature_selection__k=15, svm__C=0.1, svm__kernel=linear;, score=0.602 total time=  31.1s
+[CV 7/10] END feature_selection__k=15, svm__C=0.1, svm__kernel=linear;, score=0.587 total time=  33.3s
+[CV 9/10] END feature_selection__k=15, svm__C=0.1, svm__kernel=linear;, score=0.593 total time=  31.5s
+[CV 8/10] END feature_selection__k=15, svm__C=0.1, svm__kernel=linear;, score=0.582 total time=  41.3s
+[CV 10/10] END feature_selection__k=15, svm__C=0.1, svm__kernel=linear;, score=0.603 total time=  31.5s
+[CV 2/10] END feature_selection__k=10, svm__C=10.0, svm__kernel=linear;, score=0.523 total time= 9.4min
+[CV 2/10] END feature_selection__k=15, svm__C=1.0, svm__kernel=linear;, score=0.592 total time= 1.8min
+[CV 3/10] END feature_selection__k=15, svm__C=1.0, svm__kernel=linear;, score=0.591 total time= 1.6min
+[CV 1/10] END feature_selection__k=15, svm__C=1.0, svm__kernel=linear;, score=0.601 total time= 2.1min
+[CV 4/10] END feature_selection__k=15, svm__C=1.0, svm__kernel=linear;, score=0.601 total time= 1.6min
+[CV 5/10] END feature_selection__k=15, svm__C=1.0, svm__kernel=linear;, score=0.575 total time= 1.3min
+[CV 6/10] END feature_selection__k=15, svm__C=1.0, svm__kernel=linear;, score=0.602 total time= 1.7min
+[CV 7/10] END feature_selection__k=15, svm__C=1.0, svm__kernel=linear;, score=0.587 total time= 1.8min
+[CV 10/10] END feature_selection__k=10, svm__C=10.0, svm__kernel=linear;, score=0.542 total time= 6.6min
+[CV 9/10] END feature_selection__k=15, svm__C=1.0, svm__kernel=linear;, score=0.593 total time= 1.7min
+[CV 8/10] END feature_selection__k=15, svm__C=1.0, svm__kernel=linear;, score=0.584 total time= 2.0min
+[CV 6/10] END feature_selection__k=10, svm__C=10.0, svm__kernel=linear;, score=0.601 total time=12.7min
+[CV 10/10] END feature_selection__k=15, svm__C=1.0, svm__kernel=linear;, score=0.603 total time= 1.7min
+[CV 5/10] END feature_selection__k=10, svm__C=10.0, svm__kernel=linear;, score=0.513 total time=15.5min
+[CV 9/10] END feature_selection__k=10, svm__C=10.0, svm__kernel=linear;, score=0.522 total time=13.7min
+[CV 4/10] END feature_selection__k=15, svm__C=10.0, svm__kernel=linear;, score=0.601 total time= 7.7min
+[CV 2/10] END feature_selection__k=15, svm__C=10.0, svm__kernel=linear;, score=0.592 total time= 9.3min
+[CV 3/10] END feature_selection__k=15, svm__C=10.0, svm__kernel=linear;, score=0.591 total time=10.0min
+[CV 1/10] END feature_selection__k=20, svm__C=0.1, svm__kernel=linear;, score=0.604 total time=  38.3s
+[CV 6/10] END feature_selection__k=15, svm__C=10.0, svm__kernel=linear;, score=0.602 total time=10.5min
+[CV 2/10] END feature_selection__k=20, svm__C=0.1, svm__kernel=linear;, score=0.598 total time=  33.9s
+[CV 3/10] END feature_selection__k=20, svm__C=0.1, svm__kernel=linear;, score=0.590 total time=  40.8s
+[CV 4/10] END feature_selection__k=20, svm__C=0.1, svm__kernel=linear;, score=0.602 total time=  36.8s
+[CV 5/10] END feature_selection__k=20, svm__C=0.1, svm__kernel=linear;, score=0.605 total time=  36.3s
+[CV 6/10] END feature_selection__k=20, svm__C=0.1, svm__kernel=linear;, score=0.604 total time=  37.7s
+[CV 7/10] END feature_selection__k=20, svm__C=0.1, svm__kernel=linear;, score=0.587 total time=  40.6s
+[CV 8/10] END feature_selection__k=20, svm__C=0.1, svm__kernel=linear;, score=0.586 total time=  48.7s
+[CV 9/10] END feature_selection__k=20, svm__C=0.1, svm__kernel=linear;, score=0.600 total time=  36.6s
+[CV 10/10] END feature_selection__k=20, svm__C=0.1, svm__kernel=linear;, score=0.608 total time=  31.4s
+[CV 7/10] END feature_selection__k=15, svm__C=10.0, svm__kernel=linear;, score=0.587 total time=11.5min
+[CV 2/10] END feature_selection__k=20, svm__C=1.0, svm__kernel=linear;, score=0.598 total time= 2.6min
+[CV 1/10] END feature_selection__k=20, svm__C=1.0, svm__kernel=linear;, score=0.605 total time= 3.3min
+[CV 3/10] END feature_selection__k=20, svm__C=1.0, svm__kernel=linear;, score=0.591 total time= 2.4min
+[CV 1/10] END feature_selection__k=15, svm__C=10.0, svm__kernel=linear;, score=0.601 total time=18.6min
+[CV 9/10] END feature_selection__k=15, svm__C=10.0, svm__kernel=linear;, score=0.594 total time=10.9min
+[CV 4/10] END feature_selection__k=20, svm__C=1.0, svm__kernel=linear;, score=0.602 total time= 2.5min
+[CV 10/10] END feature_selection__k=15, svm__C=10.0, svm__kernel=linear;, score=0.603 total time=10.5min
+[CV 8/10] END feature_selection__k=15, svm__C=10.0, svm__kernel=linear;, score=0.586 total time=12.8min
+[CV 5/10] END feature_selection__k=20, svm__C=1.0, svm__kernel=linear;, score=0.605 total time= 2.6min
+[CV 6/10] END feature_selection__k=20, svm__C=1.0, svm__kernel=linear;, score=0.604 total time= 2.7min
+[CV 7/10] END feature_selection__k=20, svm__C=1.0, svm__kernel=linear;, score=0.587 total time= 2.7min
+[CV 9/10] END feature_selection__k=20, svm__C=1.0, svm__kernel=linear;, score=0.600 total time= 2.6min
+[CV 10/10] END feature_selection__k=20, svm__C=1.0, svm__kernel=linear;, score=0.608 total time= 2.9min
+[CV 8/10] END feature_selection__k=20, svm__C=1.0, svm__kernel=linear;, score=0.586 total time= 5.7min
+[CV 5/10] END feature_selection__k=15, svm__C=10.0, svm__kernel=linear;, score=0.575 total time=38.9min
+[CV 3/10] END feature_selection__k=20, svm__C=10.0, svm__kernel=linear;, score=0.591 total time=28.4min
+[CV 5/10] END feature_selection__k=20, svm__C=10.0, svm__kernel=linear;, score=0.605 total time=30.1min
+[CV 4/10] END feature_selection__k=20, svm__C=10.0, svm__kernel=linear;, score=0.602 total time=33.2min
+[CV 1/10] END feature_selection__k=20, svm__C=10.0, svm__kernel=linear;, score=0.605 total time=36.8min
+[CV 7/10] END feature_selection__k=20, svm__C=10.0, svm__kernel=linear;, score=0.587 total time=32.0min
+[CV 10/10] END feature_selection__k=20, svm__C=10.0, svm__kernel=linear;, score=0.608 total time=16.3min
+[CV 6/10] END feature_selection__k=20, svm__C=10.0, svm__kernel=linear;, score=0.604 total time=46.1min
+[CV 2/10] END feature_selection__k=20, svm__C=10.0, svm__kernel=linear;, score=0.598 total time=53.5min
+[CV 8/10] END feature_selection__k=20, svm__C=10.0, svm__kernel=linear;, score=0.586 total time=36.1min
