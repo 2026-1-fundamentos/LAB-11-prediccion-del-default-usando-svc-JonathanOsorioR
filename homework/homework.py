@@ -156,8 +156,9 @@ pipeline = Pipeline([
 ])
 
 param_grid = {
-    'feature_selection__k': [10, 15, 20],
-    'svm__C': [0.1, 1.0, 10.0],
+    'feature_selection__k': [15, 20, 24],
+    'svm__C': [1.0, 10.0, 50.0],
+    'svm__gamma': ['scale', 0.05, 0.1],
     'svm__kernel': ['rbf'],
 }
 
