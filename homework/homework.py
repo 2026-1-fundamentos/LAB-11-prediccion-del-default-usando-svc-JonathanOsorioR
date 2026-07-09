@@ -111,13 +111,14 @@ from sklearn.preprocessing import OneHotEncoder, StandardScaler
 from sklearn.decomposition import PCA
 from sklearn.feature_selection import SelectKBest, f_classif
 from sklearn.svm import SVC
-from sklearn.model_selection import GridSearchCV
+from sklearn.model_selection import GridSearchCV, StratifiedKFold
 from sklearn.metrics import (
     precision_score, 
     balanced_accuracy_score, 
     recall_score, 
     f1_score, 
-    confusion_matrix
+    confusion_matrix,
+    make_scorer,
 )
 
 inicio = time.time()
@@ -140,44 +141,49 @@ x_train, y_train = train.drop(columns = "default"),train["default"]
 cat_features = ['SEX', 'EDUCATION', 'MARRIAGE']
 num_features = [col for col in x_train.columns if col not in cat_features]
 
+
 preprocessor = ColumnTransformer(
     transformers=[
-        ('cat', OneHotEncoder(handle_unknown='ignore', sparse_output=False), cat_features)
+        ('cat', OneHotEncoder(handle_unknown='ignore'), cat_features),
+        ('num', StandardScaler(with_mean = True, with_std = True), num_features)
     ],
     remainder='passthrough'
 )
-
+ 
 pipeline = Pipeline([
     ('preprocessor', preprocessor),
     ('pca', PCA()),
-    ('scaler', StandardScaler()),
     ('feature_selection', SelectKBest(score_func=f_classif)),
-    ('svm', SVC(random_state=42))
+    ('svm', SVC(kernel="rbf", random_state=1018, max_iter=-1))
 ])
-
+ 
 param_grid = {
-    'feature_selection__k': [15, 20, 24],
-    'svm__C': [1.0, 10.0, 50.0],
-    'svm__gamma': ['scale', 0.05, 0.1],
+    'pca__n_components': [20],
+    'feature_selection__k': [12],
     'svm__kernel': ['rbf'],
+    'svm__gamma': [0.1]
 }
+ 
+cv = StratifiedKFold(n_splits=10)
 
+scorer = make_scorer(balanced_accuracy_score)
+ 
 grid_search = GridSearchCV(
     estimator=pipeline,
     param_grid=param_grid,
-    cv=10,
-    scoring='balanced_accuracy',
+    cv=cv,
+    scoring=scorer,
     n_jobs=-1,
     refit=True,
     verbose=3,
 )
 print("Iniciando el entrenamiento del modelo (esto puede tomar varios minutos)...")
 grid_search.fit(x_train, y_train)
-
+ 
 os.makedirs("files/models", exist_ok=True)
 with gzip.open("files/models/model.pkl.gz", "wb") as f:
     pickle.dump(grid_search, f)
-
+ 
 def calculate_metrics_and_cm(model, x, y, dataset_name):
     y_pred = model.predict(x)
     
@@ -199,10 +205,10 @@ def calculate_metrics_and_cm(model, x, y, dataset_name):
     }
     
     return metrics, cm_dict
-
+ 
 train_metrics, train_cm = calculate_metrics_and_cm(grid_search, x_train, y_train, 'train')
 test_metrics, test_cm = calculate_metrics_and_cm(grid_search, x_test, y_test, 'test')
-
+ 
 os.makedirs("files/output", exist_ok=True)
 with open("files/output/metrics.json", "w") as f:
     f.write(json.dumps(train_metrics) + "\n")
